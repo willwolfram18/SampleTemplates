@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Billy Wolfington",
+    "classifications": [ "Common", "Console" ],
+    "identity": "SampleTemplates.ConsoleApp.CSharp",
+    "name": "Custom Console App Template",
+    "shortName": "myconsole",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "myconsoleapp",
+    "defaultName": "ExampleConsoleApp",
+    "preferNameDirectory": true,
+    "primaryOutputs": [
+        { "path": "myconsoleapp.csproj" },
+        { "path": "Program.cs" }
+    ]
+}
