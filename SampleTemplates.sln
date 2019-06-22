@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleTemplates", "SampleTemplates\SampleTemplates.csproj", "{2B3626DC-B4C4-4CEB-8FCA-6A7770B49F05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleTemplates", "SampleTemplates\SampleTemplates.csproj", "{2B3626DC-B4C4-4CEB-8FCA-6A7770B49F05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,9 +13,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2B3626DC-B4C4-4CEB-8FCA-6A7770B49F05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -30,5 +27,11 @@ Global
 		{2B3626DC-B4C4-4CEB-8FCA-6A7770B49F05}.Release|x64.Build.0 = Release|Any CPU
 		{2B3626DC-B4C4-4CEB-8FCA-6A7770B49F05}.Release|x86.ActiveCfg = Release|Any CPU
 		{2B3626DC-B4C4-4CEB-8FCA-6A7770B49F05}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {15A1C98A-69F1-4B54-AE00-E2A8A9B8F05A}
 	EndGlobalSection
 EndGlobal

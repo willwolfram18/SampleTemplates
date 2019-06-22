@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Billy Wolfington",
+  "classifications": [ "Common", "Webb" ],
+  "identity": "SampleTemplates.DotNetNewCustomApi.CSharp",
+  "groupIdentity": "SampleTemplates.DotNetNew.CustomApi",
+  "name": "Custom Web API",
+  "shortName": "customapi",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "sourceName": "DotNetNew.CustomWebApi",
+  "defaultName": "WebApi",
+  "preferNameDirectory": true,
+  "primaryOutputs": [
+    { "path": "DotNetNew.CustomWebApi.csproj" },
+    { "path": "Program.cs" },
+    { "path": "Startup.cs" },
+    { "path": "Properties/launchSettings.json" },
+    { "path": "Controllers/ValuesController.cs" }
+  ]
+}
