@@ -3,6 +3,7 @@
     "author": "Billy Wolfington",
     "classifications": [ "Common", "Console" ],
     "identity": "SampleTemplates.ConsoleApp.CSharp",
+    "groupIdentity": "SampleTemplates.DotNetNew.ConsoleApp",
     "name": "Custom Console App Template",
     "shortName": "myconsole",
     "tags": {

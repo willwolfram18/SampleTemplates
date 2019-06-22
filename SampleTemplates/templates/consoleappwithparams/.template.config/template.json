@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "Billy Wolfington",
+    "classifications": [ "Common", "Console" ],
+    "identity": "SampleTemplates.ConsoleAppWithParams.CSharp",
+    "groupIdentity": "SampleTemplates.DotNetNew.ConsoleAppWithParams",
+    "name": "Custom Console App With Params",
+    "shortName": "myconsoleparams",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sourceName": "consoleappwithparams",
+    "defaultName": "ExampleConsoleApp",
+    "preferNameDirectory": true,
+    "primaryOutputs": [
+        { "path": "consoleappwithparams.csproj" },
+        { "path": "Program.cs" }
+    ],
+    "symbols": {
+        "Framework": {
+            "type": "parameter",
+            "description": "The target framework for the project.",
+            "datatype": "choice",
+            "choices": [
+                {
+                    "choice": "netcoreapp2.0",
+                    "description": "Target .NET Core 2.0"
+                },
+                {
+                    "choice": "netcoreapp2.1",
+                    "description": "Target .NET Core 2.1"
+                },
+                {
+                    "choice": "netcoreapp3.0",
+                    "description": "Target .NET Core 3.0"
+                },
+                {
+                    "choice": "net461",
+                    "description": "Target .NET Framework 4.6.1"
+                }
+            ]
+        }
+    }
+}
