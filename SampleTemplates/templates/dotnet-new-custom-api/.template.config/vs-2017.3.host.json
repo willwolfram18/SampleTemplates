@@ -1,0 +1,12 @@
+{
+  "name": {
+    "text": "Custom Web API"
+  },
+  "description": {
+    "text": "A custom web API template."
+  },
+  "order": 1000,
+  "supportsDocker": true,
+  "isApi": true,
+  "includeLaunchSettings": true
+}

@@ -10,10 +10,18 @@ namespace DotNetNew.CustomWebApi.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private readonly ILogger<ValuesController> _log;
+
+        public ValuesController(ILogger<ValuesController> log)
+        {
+            _log = log;
+        }
+
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
+            _log.LogInformation("Get multiple values");
             return new string[] { "value1", "value2" };
         }
 
