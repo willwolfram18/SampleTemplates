@@ -4,7 +4,7 @@
   "classifications": [ "Web", "WebAPI" ],
   "identity": "SampleTemplates.DotNetNewCustomApi.CSharp",
   "groupIdentity": "SampleTemplates.DotNetNew.CustomApi",
-  "name": "Custom Web API",
+  "name": "Web API with NSwag",
   "shortName": "customapi",
   "tags": {
     "language": "C#",
@@ -20,10 +20,16 @@
     { "path": "Controllers/ValuesController.cs" }
   ],
   "symbols": {
+    "TargetFrameworkOverride": {
+      "type": "parameter",
+      "description": "The target framework override",
+      "defaultValue": "netcoreapp2.1"
+    },
     "Framework": {
       "type": "parameter",
       "description": "The target framework for the project.",
       "datatype": "choice",
+      "replaces": "TargetFrameworkOverride",
       "choices": [
         {
           "choice": "netcoreapp2.0",
@@ -37,8 +43,7 @@
           "choice": "netcoreapp2.2",
           "description": "Target netcoreapp2.2"
         }
-      ],
-      "defaultValue": "2.0"
+      ]
     }
   }
 }

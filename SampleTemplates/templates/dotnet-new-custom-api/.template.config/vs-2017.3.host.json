@@ -1,11 +1,17 @@
 {
   "name": {
-    "text": "Custom Web API"
+    "text": "Web API with NSwag"
   },
   "description": {
-    "text": "A custom web API template."
+    "text": "A basic ASP.NET Web API with NSwag Swagger docs."
   },
-  "order": 1000,
+  "order": 1,
   "supportsDocker": true,
-  "isApi": true
+  "isApi": true,
+  "ports": [
+    {
+      "useHttps": true,
+      "name": "port"
+    }
+  ]
 }
