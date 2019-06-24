@@ -18,5 +18,27 @@
     { "path": "Program.cs" },
     { "path": "Startup.cs" },
     { "path": "Controllers/ValuesController.cs" }
-  ]
+  ],
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project.",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "netcoreapp2.0",
+          "description": "Target netcoreapp2.0"
+        },
+        {
+          "choice": "netcoreapp2.1",
+          "description": "Target netcoreapp2.1"
+        },
+        {
+          "choice": "netcoreapp2.2",
+          "description": "Target netcoreapp2.2"
+        }
+      ],
+      "defaultValue": "2.0"
+    }
+  }
 }

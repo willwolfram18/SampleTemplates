@@ -7,6 +7,5 @@
   },
   "order": 1000,
   "supportsDocker": true,
-  "isApi": true,
-  "includeLaunchSettings": true
+  "isApi": true
 }
