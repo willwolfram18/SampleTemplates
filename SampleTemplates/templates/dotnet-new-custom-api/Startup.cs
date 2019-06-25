@@ -50,6 +50,9 @@ namespace DotNetNew.CustomWebApi
 
             app.UseOpenApi()
                 .UseSwaggerUi3();
+
+            Console.WriteLine("Used a name of LowerCaseProjectName");
+            Console.WriteLine("Contains company name BlahBlah");
         }
     }
 }

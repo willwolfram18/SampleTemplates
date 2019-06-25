@@ -6,3 +6,5 @@ obj
 
 *.nupkg
 *.user
+
+packages/
