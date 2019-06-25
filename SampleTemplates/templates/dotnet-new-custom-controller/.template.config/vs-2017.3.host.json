@@ -1,0 +1,9 @@
+{
+  "name": {
+    "text": "Custom API Controller"
+  },
+  "description": {
+    "text": "A custom API controller."
+  },
+  "order": 1
+}

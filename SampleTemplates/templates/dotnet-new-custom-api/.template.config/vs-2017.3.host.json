@@ -10,8 +10,13 @@
   "isApi": true,
   "ports": [
     {
-      "useHttps": true,
-      "name": "port"
+      "name": "HttpPort",
+      "useHttps": false
+    },
+    {
+      "name": "HttpsPort",
+      "useHttps": true
     }
-  ]
+  ],
+  "disableHttpsSymbol": "NoHttps"
 }

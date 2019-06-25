@@ -1,0 +1,21 @@
+{
+  "author": "William Wolfington",
+  "classifications": [ "Web", "MVC" ],
+  "identity": "SampleTemplates.DotNetNew.CustomApiController.CSharp",
+  "groupIdentity": "SampleTemplates.DotNetNew.CustomApiController",
+  "name": "Custom API Controller",
+  "shortName": "apicontroller",
+  "defaultName": "NewController",
+  "description": "Creates a new API controller.",
+  "tags": {
+    "language": "C#",
+    "type": "item"
+  },
+  "sourceName": "NewController",
+  "preferNameDirectory": true,
+  "primaryOutputs": [
+    {
+      "path": "NewController.cs"
+    }
+  ]
+}

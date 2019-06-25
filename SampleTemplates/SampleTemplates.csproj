@@ -18,4 +18,8 @@
     <Compile Remove="templates\**\*" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="templates\dotnet-new-custom-api\Properties\launchSettings.json" />
+  </ItemGroup>
+
 </Project>
