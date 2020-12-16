@@ -26,6 +26,11 @@ namespace MyWebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+
+            services.AddOpenApiDocument(document =>
+            {
+                document.Title = "FIXME";
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +44,9 @@ namespace MyWebApi
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseOpenApi()
+                .UseSwaggerUi3();
 
             app.UseAuthorization();
 
