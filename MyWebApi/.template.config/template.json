@@ -1,0 +1,83 @@
+{
+    "$schema": "http://json.schemastore.org/template",
+    "author": "William Wolfram",
+    "classifications": [
+        "Web",
+        "WebAPI"
+    ],
+    "identity": "willwolfram18.Templates.WebApi.CSharp",
+    "groupIdentity": "willwolfram18.Templates",
+    "name": "Versioned Web API with NSwag",
+    "shortName": "my-api",
+    "tags": {
+        "language": "C#",
+        "type": "project"
+    },
+    "sources": [
+        {
+            "source": "./",
+            "target": "./",
+            "exclude": "./.template.config/**"
+        }
+    ],
+    "symbols": {
+        "HttpPort": {
+            "type": "parameter",
+            "datatype": "integer",
+            "description": "Port number to use for the HTTP endpoint in launchSettings.json."
+        },
+        "HttpPortGenerated": {
+            "type": "generated",
+            "generator": "port"
+        },
+        "HttpPortReplacer": {
+            "type": "generated",
+            "generator": "coalesce",
+            "parameters": {
+                "sourceVariableName": "HttpPort",
+                "fallbackVariableName": "HttpPortGenerated"
+            },
+            "replaces": "8080"
+        },
+        "HttpsPort": {
+            "type": "parameter",
+            "datatype": "integer",
+            "description": "Port number to use for the HTTPS endpoint in launchSettings.json."
+        },
+        "HttpsPortGenerated": {
+            "type": "generated",
+            "generator": "port",
+            "parameters": {
+                "low": 44300,
+                "high": 44399
+            }
+        },
+        "HttpsPortReplacer": {
+            "type": "generated",
+            "generator": "coalesce",
+            "parameters": {
+                "sourceVariableName": "HttpsPort",
+                "fallbackVariableName": "HttpsPortGenerated"
+            },
+            "replaces": "44300"
+        },
+        "skipRestore": {
+            "type": "parameter",
+            "datatype": "bool",
+            "defaultValue": "false"
+        }
+    },
+    "postActions": [
+        {
+            "condition": "(!skipRestore)",
+            "description": "Restore NuGet packages required by this project.",
+            "manualInstructions": [
+                {
+                    "text": "Run 'dotnet restore'"
+                }
+            ],
+            "actionId": "210D431B-A78B-4D2F-B762-4ED3E3EA9025",
+            "continueOnError": true
+        }
+    ]
+}
