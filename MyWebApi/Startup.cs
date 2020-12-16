@@ -26,10 +26,23 @@ namespace MyWebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddMvcCore();
+
+            services.AddApiVersioning(versioning =>
+            {
+                versioning.AssumeDefaultVersionWhenUnspecified = true;
+                versioning.DefaultApiVersion = new ApiVersion(1, 0);
+            })
+            .AddVersionedApiExplorer(explorerOptions =>
+            {
+                explorerOptions.GroupNameFormat = "'v'VVV";
+                explorerOptions.SubstituteApiVersionInUrl = true;
+            });
 
             services.AddOpenApiDocument(document =>
             {
                 document.Title = "FIXME";
+                document.AllowReferencesWithProperties = true;
             });
         }
 
