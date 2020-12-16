@@ -1,3 +1,7 @@
+## Original Docs
+* Microsoft docs for custom templates: https://docs.microsoft.com/en-us/dotnet/core/tools/custom-templates
+* Blog post: https://www.infoq.com/articles/dotnet-core-template-engine/
+
 ### `template.json`
 Listed below are some details I've discovered about the `template.json` file that is part of project templates.
 
